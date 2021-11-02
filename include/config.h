@@ -51,10 +51,10 @@
                                            // (Sensor readings are considered to be invalid if not successsfully
                                            // read within this timespan)
 
-#define NTP_UPDATE_INTERVAL_MINUTES 140000     //  With this interval sytem time is updated via NTP
+#define NTP_UPDATE_INTERVAL_MINUTES  10    //  With this interval sytem time is updated via NTP
                                            //  with internet time (is limited to be not below 1 min)
 
-#define UPDATE_TIME_FROM_AZURE_RESPONSE 1  // 1 = yes, 0 = no. SystemTime is updated from the Post response from Azure.
+#define UPDATE_TIME_FROM_AZURE_RESPONSE 0  // 1 = yes, 0 = no. SystemTime is updated from the Post response from Azure.
                                            // With this option set, you can set  NTP_UPDATE_INTERVAL_MINUTES to a very
                                            // long time, so that it 'never' happens                                      
 
